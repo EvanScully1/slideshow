@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="js/script.js">
+    <title>SlideShow</title>
+</head>
+<header>
+    <img src="images/random_logo_by_criticl_d7eqdvw-pre.png" alt="logo image">
+    <h2>Random Slide Show</h2>
+</header>
+<body>
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="https://picsum.photos/800/600" alt="img1"></div>
+                <div class="image fadeout"><img src="https://picsum.photos/800/601" alt="img2"></div>
+                <div class="image fadeout"><img src="https://picsum.photos/800/602" alt="img3"></div>
+                <div class="image fadeout"><img src="https://picsum.photos/800/603" alt="img4"></div>
+                <div class="image fadeout"><img src="https://picsum.photos/800/604" alt="img5"></div>
+                <div class="prev" onclick="showImage(-1)"><i class="fa-regular fa-angles-right fa-rotate-180"></i></div>
+                <div class="next" onclick="showImage(1)"><i class="fa-regular fa-angles-right"></i></div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </main>
+</body>
+<footer>
+    <p>&copy; <span id="copyright"></span> Evan Scully</p>
+</footer>
+
+<script src="js/script.js"></script>
+</html>
